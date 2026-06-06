@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 // CONNECT MONGODB
 // =========================
 console.log("MONGO_URL =", process.env.MONGO_URL);
+
 mongoose.connect(process.env.MONGO_URL, {
     serverSelectionTimeoutMS: 30000
 })
